@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="not-supported-message">
+    <h2 class="text-center">Not supported</h2>
+  </div>
+  <div class="container-fluid">
+    <div class="content">
+      <div class="navbar-container">
+        <nav class="navbar navbar-color navbar-expand-lg navbar-light bg-light rounded">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="navbar-brand" href="#">Calcs</a>
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0" id="menuItems">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">
+                  Página inicial
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  Dashboards
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  Transações
+                </a>
+              </li>
+            </ul>
+            <ul class="navbar-nav social-nav my-2 my-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  Login
+                </a>
+              </li>
+            </ul>
+            <!-- <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form> -->
+          </div>
+        </nav>
+      </div>
+      <div class="card-container">
+        <div class="card-row">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Despesas mensais</h5>
+              <h6 class="card-text">R$ 5.000,00</h6>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Despesas anuais</h5>
+              <h6 class="card-text">R$ 40.000,00</h6>
+            </div>
+          </div>
+        </div>
+        <div class="card-row">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Receitas mensais</h5>
+              <h6 class="card-text">R$ 6.000,00</h6>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Receitas anuais</h5>
+              <h6 class="card-text">R$ 38.000,00</h6>
+            </div>
+          </div>
+        </div>
+        <div class="card-row">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Saldo mensal</h5>
+              <h6 class="card-text">R$ 1.000,00</h6>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Saldo anual</h5>
+              <h6 class="card-text">R$ -2.000,00</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="table-container">
+        <table class="table">
+          <thead class="thead-light">
+            <tr>
+              <th scope="col" colspan="4">Descrição</th>
+              <th scope="col" colspan="3">Valor</th>
+              <th scope="col" colspan="2">Tipo de transação</th>
+              <th scope="col" colspan="1">Ações</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td colspan="4">Conta de luz</td>
+              <td colspan="3">R$ 180,00</td>
+              <td colspan="2">Pagamento</td>
+              <td colspan="1"><a href="#">Editar</a></td>
+            </tr>
+            <tr>
+              <td colspan="4">Restituição IR</td>
+              <td colspan="3">R$ 200,00</td>
+              <td colspan="2">Receita</td>
+              <td colspan="1"><a href="#">Editar</a></td>
+            </tr>
+            <tr>
+              <td colspan="4">Conta de luz</td>
+              <td colspan="3">R$ 180,00</td>
+              <td colspan="2">Pagamento</td>
+              <td colspan="1"><a href="#">Editar</a></td>
+            </tr>
+            <tr>
+              <td colspan="4">Restituição IR</td>
+              <td colspan="3">R$ 200,00</td>
+              <td colspan="2">Receita</td>
+              <td colspan="1"><a href="#">Editar</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script>
+    const menuItems = document.querySelectorAll('.nav-link');
+    menuItems.forEach((item) => {
+      item.addEventListener('click', () => {
+        let anyElementWithActiveClass = document.getElementsByClassName('active');
+        if (anyElementWithActiveClass.length > 0) {
+          anyElementWithActiveClass[0].classList.remove('active');
+        }
+        item.classList.add('active');
+      })
+    })
+  </script>
+</body>
+</html>

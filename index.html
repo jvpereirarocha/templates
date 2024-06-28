@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="base.css">
+</head>
+<body>
+  <div class="container">
+    <input data-function="swipe" id="swipe" type="checkbox">
+    <label data-function="swipe" for="swipe">&#xf057;</label>
+    <label data-function="swipe" for="swipe">&#xf0c9;</label>
+    <div class="sidebar">
+      <h2 class="menu-title">Menu</h2>
+      <nav class="menu">
+        <ul>
+          <li><a href="#">Pagina inicial <span class="menu-item-icon"><i class="fa-solid fa-house"></i></span></a></li>
+          <li><a href="#">Transações <span class="menu-item-icon"><i class="fa-solid fa-coins"></i></span></a></li>
+          <li><a href="#">Relatórios <span class="menu-item-icon"><i class="fa-solid fa-file-pen"></i></span></a></li>
+          <li><a href="#">Dashboards <span class="menu-item-icon"><i class="fa-solid fa-chart-line"></i></span></a></li>
+          <li>
+            <a href="#" class="dropdown-btn">Usuário <span class="menu-item-icon"><i class="fa-solid fa-user"></i> <i class="fa-solid fa-caret-down"></i></span>
+            </a>
+          </li>
+          <ul class="dropdown-container">
+            <li><a href="#">Perfil</a></li>
+            <li><a href="#">Configurações</a></li>
+            <li><a href="#">Logout</a></li>
+          </ul>
+        </ul>
+      </nav>
+    </div>
+    <main class="content">
+      <h1 class="main-title">
+        Home
+      </h1>
+      <div class="cards-container">
+        <div class="card">
+          <div class="card-header">
+            <h2 class="card-title">Gastos mensais</h2>
+          </div>
+          <div class="card-body">
+            <div class="card-text">R$ 4.000,00</div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <h2 class="card-title">Receitas mensais</h2>
+          </div>
+          <div class="card-body">
+            <div class="card-text">R$ 5.000,00</div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <h2 class="card-title">Saldo mensal</h2>
+          </div>
+          <div class="card-body">
+            <div class="card-text">R$ 1.000,00</div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <h2 class="card-title">Gastos anuais</h2>
+          </div>
+          <div class="card-body">
+            <div class="card-text">R$ 46.000,00</div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <h2 class="card-title">Receitas anuais</h2>
+          </div>
+          <div class="card-body">
+            <div class="card-text">R$ 43.000,00</div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <h2 class="card-title">Saldo anual</h2>
+          </div>
+          <div class="card-body">
+            <div class="card-text">R$ -3.000,00</div>
+          </div>
+        </div>
+      </div>
+      <div class="table-container">
+        <table class="table-resume-transactions">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Descrição</th>
+              <th>R$ Valor</th>
+              <th>Tipo de transação</th>
+              <th>Ação</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Conta de luz</td>
+              <td>R$ 150,00</td>
+              <td>Despesa</td>
+              <td>
+                <a href="#" class="btn-action">Editar</a>
+              </td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Conta de água</td>
+              <td>R$ 50,00</td>
+              <td>Despesa</td>
+              <td>
+                <a href="#" class="btn-action">Editar</a>
+              </td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Salário do mês</td>
+              <td>R$ 4.000,00</td>
+              <td>Receita</td>
+              <td>
+                <a href="#" class="btn-action">Editar</a>
+              </td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Conta de internet</td>
+              <td>R$ 179,00</td>
+              <td>Despesa</td>
+              <td>
+                <a href="#" class="btn-action">Editar</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+    <footer class="footer">
+      Footer
+      Copyright &nbsp; Todos os direitos reservados
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
